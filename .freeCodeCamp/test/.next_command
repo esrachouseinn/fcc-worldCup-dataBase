@@ -109,3 +109,10 @@ chmod +x insert_data.sh
 ./insert_data.sh
 ./insert_data.sh
 ./queries.sh
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+git remote add origin https://github.com/esrachouseinn/fcc-worldCup-dataBase.git
+git remote -v
+git remote remove origin
+git remote -v
+git remote add origin https://github.com/esrachouseinn/fcc-worldCup-dataBase.git
+git add .
